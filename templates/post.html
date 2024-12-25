@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Detecting Stress Based on Social Interactions in Social Networks</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link href="../static/css/tooplate_style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/ddsmoothmenu.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <div id="tooplate_wrapper">
+        <div id="tooplate_header">
+            <div id="site_title">
+                <br/>
+                <center>
+                    <font size="5">Detecting Stress Based on Social Interactions in Social Networks</font>
+                </center>
+            </div>
+
+            <div id="tooplate_menu" class="ddsmoothmenu">
+                <ul>
+                    <li><a href="/userhome">Home</a></li>
+                    <li><a href="/post" class="selected">Add post</a></li>
+                    <li><a href="/uvc">View Post</a></li>
+                    <li><a href="/index">Logout</a></li>
+                </ul>
+                <br style="clear: left" />
+            </div>
+
+            <div id="tooplate_main">
+
+                <div id="tooplate_slider">
+
+                    <img src="../static/images/ss.jpg" alt="" height="240" width="900" />
+
+                </div>
+                <div id="tooplate_content">
+
+                    <center>
+                        <p>
+                            <font color="black" size="5"> Add Post</font>
+                        </p>
+                    </center><br/>
+
+                    <center>
+                        <form name="myform" action="/postact" method="post">
+                            <table border="0">
+
+                                <tr>
+                                    <td>
+                                        <font color="black"> Name</td>
+                                    <td><input type="text" name="uname" value="{{session['username']}}" readonly required="" /></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <font color="black">Post</td>
+                                    <td><textarea name="post" style="width: 100%;"></textarea></tr>
+
+                                <tr rowspan="2" align="center">
+                                    <td><br><input type="submit" name="submit" value="Add" /></td>
+                                </tr>
+                                <tr></tr>
+                            </table>
+                        </form><br>
+
+                    </center>
+                </div>
+            </div>
+
+            <div id="tooplate_footer">
+                <p>
+                    <a href="http://www.  .org/">
+                        <font color="orange"> </font>
+                    </a>
+                </p>
+                <div class="cleaner"></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
